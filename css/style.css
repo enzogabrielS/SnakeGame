@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Poppings", sans-serif;
+}
+
+body{
+
+    background-color: #0c0c0c;
+    display: flex;
+    min-height: 100dvh;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+canvas {
+    background-color: #000;
+    width: min(90vmin, 600px);
+    height: min(90vmin, 600px);
+}
+
+
+.score {
+    position: absolute;
+    top: 20dvh; /* Distância do topo */
+    left: 10dvw; /* Distância da borda direita */
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recorde-pessoal{
+    position: absolute;
+    top: 22dvh; /* Distância do topo */
+    right: 10dvw; /* Distância da borda direita */
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-value-best{
+    font-weight: 600;
+    font-size: 2rem;
+    display: block;
+    margin-top: -7px;
+}
+
+.score-value {
+    font-weight: 700;
+    font-size: 2.3rem;
+    display: block;
+    margin-top: -7px;
+}
+
+.scoreAfter{
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-screen {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: #000;
+    width: min(90vmin, 320px);
+    height: min(90vmin, 250px);
+    border-radius: 10px;
+    border: 2px solid #6d4375;
+}
+
+.game-over {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.final-score {
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+.btn-play {
+    border: none;
+    border-radius: 100px;
+    padding: 10px 15px 10px 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+@media (max-width: 600px) {
+    .score {
+        position: absolute;
+        bottom: 10px; /* Distância da parte inferior */
+        top: 3%;
+        left: 50%; /* Centra o score horizontalmente */
+        transform: translateX(-50%); /* Ajuste para garantir que o score esteja centralizado */
+        font-size: 1.5rem;
+        white-space: nowrap;
+
+    }
+    .score-value {
+        font-weight: 700;
+        font-size: 2.3rem;
+        justify-content: center;
+        display: block;
+        margin-top: -7px;
+    }
+    
+    .recorde-pessoal{
+        position: absolute;
+        top: 14%; /* Distância do topo */
+        right: 30%;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        white-space: nowrap;
+    }
+    
+    .score-value-best{
+        font-weight: 600;
+        font-size: 1.7rem;
+        justify-content: center;
+        display: block;
+        margin-top: -7px;
+    }
+}
