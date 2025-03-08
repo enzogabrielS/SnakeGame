@@ -8,7 +8,7 @@ const finalScore = document.querySelector(".final-score")
 let ativarMovimento = true
 let recordeScore = document.querySelector(".score-value-best")
 
-var audio = new Audio("../audio/comida.wav")
+var audio = new Audio("./audio/comida.wav")
 
 const size = 30;
 
